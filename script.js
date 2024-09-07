@@ -6,7 +6,7 @@ function GeneralNumber(operator, number) {
         var ret = "";
 
         if(this.number > 0) {
-            ret += this.operator + this.number;
+            ret += this.operator + this.number.toFixed(2);
         }
 
         return ret;
