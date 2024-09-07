@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-block: 32px;
+    background-color: rgb(250, 240, 100);
+    box-shadow: 0 2px 4px rgb(32, 32, 32);
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: 32px;
+}
+
+input {
+    display: block;
+    font-size: 1.5em;
+}
+
+.insert {
+    padding-block: 4px;
+    margin-inline: 5%;
+    margin-bottom: 32px;
+    width: 85%;
+    padding-inline: 2.5%;
+    box-shadow: 0px 0px 8px rgb(128, 128, 128);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+}
+
+.button {
+    margin-inline: 5%;
+    width: 30%;
+    box-shadow: 0px 0px 8px rgb(128, 128, 128);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    padding-block: 4px;
+    transition: 0.35s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(128, 128, 128);
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr 1fr;
+    width: 90%;
+    margin-inline: 5%;
+    border: 1px solid rgb(32, 32, 32);
+    padding-block: 4px;
+    height: 200px;
+    overflow: auto;
+}
+
+.list > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-inline: 10%;
+    margin-block: 8px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    overflow-wrap: anywhere;
+}
+
+.list > div {
+    font-weight: 700;
+    overflow: hidden;
+    justify-content: left;
+}
+
+.display {
+    margin-block: 16px;
+    width: 90%;
+    margin-inline: 5%;
+    font-size: 1.25em;
+    font-weight: 700;
+    font-family: sans-serif;
+}
