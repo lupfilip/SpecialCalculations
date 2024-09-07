@@ -99,7 +99,11 @@ document.getElementById("solve").addEventListener("click", function() {
         for(let i = 0; i < candidates.length; i++) {
             display.innerHTML += candidates[i].text() + ' ';
         }
-        if(candidates.length <= 1) break;
+        if(candidates.length == 1) break;
+        else if(candidates.length == 0) {
+            display.innerHTML += '0';
+            break;
+        }
         display.innerHTML += '= ';
 
         var candidates2 = [];
