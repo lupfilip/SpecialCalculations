@@ -6,7 +6,7 @@ function GeneralNumber(operator, number) {
         var ret = "";
 
         if(this.number > 0) {
-            ret += this.operator + this.number.toFixed(0);
+            ret += this.operator + this.number.toFixed(2);
         }
 
         return ret;
@@ -93,9 +93,9 @@ document.getElementById("solve").addEventListener("click", function() {
             }
         }
 
-        //for(let i = 0; i < candidates.length; i++) {
-            //candidates[i].number /= counter[i];
-        //}
+        for(let i = 0; i < candidates.length; i++) {
+            candidates[i].number /= counter[i];
+        }
         for(let i = 0; i < candidates.length; i++) {
             display.innerHTML += candidates[i].text() + ' ';
         }
